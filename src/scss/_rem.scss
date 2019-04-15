@@ -1,0 +1,28 @@
+// Rem设置根字体基准大小
+// Vertical screen
+
+// 375屏幕为 20px，以此为基础计算出每一种宽度的字体大小
+$baseWidth: 375px;
+
+// 根据此处设置的$baseFont：20px，所以在gulpjs中设置remUnit: 40
+$baseFont: 20px;
+$bps: 320px,360px,375px, 400px, 414px, 480px, 750px;
+
+// 默认不开启rem，如需开启，设置$mobile: true
+$mobile: false !default;
+
+@if $mobile {
+
+  html {
+    font-size: $baseFont;
+  }  
+
+  @each $b in $bps {  
+    $font: $b/$baseWidth*$baseFont;
+    @media only screen and (min-width: $b) {
+      html {
+        font-size: $font !important;
+      }
+    }
+  }
+}

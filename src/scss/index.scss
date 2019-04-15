@@ -1,0 +1,38 @@
+@charset 'utf-8';
+// @import 'normalize/import-now';
+// @import 'family';
+// // slick插件
+// @import 'slick-theme.scss';
+// @import 'slick.scss';
+
+
+// @import '_rem';
+// @import '_neat';
+// @import '_variables';
+
+// @include container;
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  display:  flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .item {
+    margin: 10px;
+    width: 250px;
+    height: 250px;
+    background-color: #234567;
+    color: #fff;
+    font-size: 40px;
+    line-height: 250px;
+    text-align: center;
+  }
+  .sp1 {
+    position: absolute;
+    order: 2;
+  }
+  .sp2 {
+    order: 1;
+  }
+}
