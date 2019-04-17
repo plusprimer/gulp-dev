@@ -1,23 +1,27 @@
-* {
+html {
   box-sizing: border-box;
+}
+
+* {
+  box-sizing: inherit;
   &::before,
   &::after {
     box-sizing: inherit;
   }
 }
 
-$neat-grid:(gutter: 10px);
-$media1000: (media: 1000px);
+// $neat-grid:(gutter: 10px);
+// $media1000: (media: 1000px);
 
-// media断点，基于bootstrap4.0
-// grid-media($media990)
-$media1200: (media: 1200px);
-$media990: (media: 990px);
-$media767: (media: 767px);
-$media574: (media: 575px);
+// // media断点，基于bootstrap4.0
+// // grid-media($media990)
+// $media1200: (media: 1200px);
+// $media990: (media: 990px);
+// $media767: (media: 767px);
+// $media574: (media: 575px);
 
-// 较复杂的响应式参考
-$llg: (media: "screen and (min-width:1200px)");
-$note: (media: "screen and (min-width: 960px) and (max-width:1199px)");
-$pad: (media: "screen and (min-768px) and (max-width: 959px)");
-$mb: (media: "all and (min-width: 480px) and (max-width: 767px)");
+// // 较复杂的响应式参考
+// $llg: (media: "screen and (min-width:1200px)");
+// $note: (media: "screen and (min-width: 960px) and (max-width:1199px)");
+// $pad: (media: "screen and (min-768px) and (max-width: 959px)");
+// $mb: (media: "all and (min-width: 480px) and (max-width: 767px)");
